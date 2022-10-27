@@ -84,7 +84,13 @@ int main(int argc, char* argv[]){
 				kq = a*b;
 				break;
 			case '/':
-				kq = a/b;
+				if(b==0){
+				    kq = 0;	
+				}
+				 else{
+				    kq = a/b;
+				}
+				
 				break;
 		}
 
